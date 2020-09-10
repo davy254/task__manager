@@ -1,0 +1,17 @@
+body{
+  background: url("img/grid.png") repeat;
+  background-attachment: fixed;
+}
+
+
+.task{
+	margin-left: 2%;
+	background-color: #1cbec6;
+	border-color: black;
+	border-radius: 5px;
+	width:100%;
+}
+
+.task-button {
+	text-align: center;
+}
