@@ -4,12 +4,12 @@
 
 <head>
     <title>To Do App</title>
-	<link href="{static 'style.css' }" rel="stylesheet">
+	<link href="{% static 'style.css' %}" rel="stylesheet">
 	<link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
 	<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 </head>
 
-<body >
+<body  style="background: url({% static 'img/grid.png' %}) repeat;" >
  <div class='container'>
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
@@ -46,29 +46,9 @@
 
 		</div>
 
-		<div class="task col-8 mt-2">
+		{% block content %}
+		{% endblock %}
 
-			<div >
-				<h3> Task Name</h3>
-				<div>
-					<h5>Date Created</h5>
-				</div>
-
-				<div>
-					<h5>Date Due</h5>
-				</div>
-			</div>
-			<hr>
-			<div>
-					<h5>Description</h5>
-					<p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
-
-					<hr>
-
-					<a class="btn btn-danger mb-2"> Delete</a>
-					<a  class="btn btn-secondary mb-2"> update</a>
-			</div>
-		</div>
 	</div>
 
  </div>

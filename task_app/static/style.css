@@ -1,5 +1,5 @@
 body{
-  background: url("img/grid.png") repeat;
+
   background-attachment: fixed;
 }
 
@@ -10,6 +10,7 @@ body{
 	border-color: black;
 	border-radius: 5px;
 	width:100%;
+	padding:15px;
 }
 
 .task-button {
